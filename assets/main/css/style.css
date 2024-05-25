@@ -1,39 +1,40 @@
 /* oswald-700 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Oswald";
+  font-family: 'Oswald';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/oswald-v53-latin-700.woff2") format("woff2"),
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url("../fonts/oswald-v53-latin-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src: url('../fonts/oswald-v53-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/oswald-v53-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
 /* poppins-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/poppins-v21-latin-regular.woff2") format("woff2"),
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url("../fonts/poppins-v21-latin-regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/poppins-v21-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 /* poppins-700 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/poppins-v21-latin-700.woff2") format("woff2"),
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url("../fonts/poppins-v21-latin-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src: url('../fonts/poppins-v21-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/poppins-v21-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+background-color: #222831;
 }
 
 /* ----------------- Home page Begin ----------------- */
@@ -78,10 +79,10 @@ font-size: 18px;
 }
 .btn_hire:hover {
 background-color: #393E46;
-color: #FFF;
+color: #fff;
 }
 .btn_cv {
-color: #FFF;
+color: #fff;
 background-color: #393E46;
 border-radius: 24px;
 padding: 8px 24px;
@@ -91,8 +92,8 @@ font-size: 18px;
 }
 
 .btn_cv:hover {
-background-color: #444A55;
-color: #FFF;
+background-color: #444a55;
+color: #fff;
 }
 
 .home_back {
@@ -106,29 +107,93 @@ margin-top: -50px
 .cs_row {
 height: 100%;
 }
-.btn_arrow{
-  background-color:#393E46;
-  display: inline-block;
-}
 
-.btn_arrow:hover{
-  background-color: #444A55;
+.btn_arrow:hover {
+background-color: #444a55;
 }
 
 .position_arrow {
-  margin-left: 40%;
+margin-left: 40%;
 }
 
 /* ----------------- Home page End ----------------- */
-                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+
+
+/* ----------------- About Section Begin ----------------- */
+.about {
+background-color: #222831;
+}
+
+.w_header {
+color: #fff;
+}
+.b_header {
+color: #00ADB5;
+}
+.d_header {
+font-family: 'Poppins';
+font-size: 64px;
+font-weight: 700;
+}
+
+.d_text {
+font-family: 'Poppins';
+font-size: 18px;
+color: #fff;
+font-weight: 400;
+}
+
+.about_illustrator {
+position: absolute;
+margin-top: 10px;
+margin-left: 120px;
+}
+
+.about {
+height: 80vh;
+}
+.about_back {
+margin-top: -200px
+}
+/* ----------------- About Section End ----------------- */
+
 
 @media screen and (max-width: 576px) {
- .creative, .designer {
+.creative, .designer {
   font-size: 60px;
- }
+}
+
+.about_back {
+  margin-top: 0;
+  position: static;
+}
+
+.about_illustrator {
+  margin-top: 60px;
+  margin-left: 20px;
+  position: static;
+}
 }
 
 @media screen and (max-width: 992px) {
+
+.home {
+  height: 100%;
+}
+
+.about_back {
+  margin-top: 0;
+  position: static;
+}
+
+.about_illustrator {
+  margin-top: 60px;
+  margin-left: 20px;
+  position: static;
+}
+.about {
+  height: 100%;
+}
 .home_vector {
   display: none;
 }
@@ -160,5 +225,5 @@ height: 100%;
 
 .position_arrow {
   margin-left: 80%;
- }
+}
 }
