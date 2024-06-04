@@ -11,7 +11,7 @@
 
 <body>
   <!-- ################# Home page begin ################# -->
-  <div class="home">
+  <div class="home" id="home">
     <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container">
         <a class="navbar-brand logo" href="#">SaulDesign</a>
@@ -22,13 +22,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
             <li class="nav-item">
-              <a class="nav-link nav_font active" aria-current="page" href="#">Home</a>
+              <a class="nav-link nav_font active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav_font" href="#">About Me</a>
+              <a class="nav-link nav_font" href="#about">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav_font" href="#">Contact</a>
+              <a class="nav-link nav_font" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -88,7 +88,7 @@
             lobortis.... <b>Read more</b>
           </p>
         </div>
-        <div class="col-12 col-lg-7">
+        <div class="col-12 col-lg-7 cs_height">
           <div class="position-relative">
             <div class="position-absolute about_back">
               <img src="assets/main/imgs/about_doodle items.svg" alt="..." style="width: 100%; height: auto" />
@@ -102,6 +102,120 @@
     </div>
   </div>
   <!-- ################# About Section End ################# -->
+
+  <!-- ################# Works Section Begin ################# -->
+  <div class="works py-5">
+    <div class="container d-flex flex-column row-gap-4 py-5">
+      <div class="py-5">
+        <h1 class="d_header w_header">My recent <span class="b_header">works</span></h1>
+        <div class="works_btn_group">
+          <a href="#" class="works_btn active_btn">All</a>
+          <a href="#" class="works_btn">UI</a>
+          <a href="#" class="works_btn">UX</a>
+          <a href="#" class="works_btn">Web Design</a>
+        </div>
+      </div>
+
+      <div class="card_group">
+        <div class="row d-flex row-gap-3 px-5 px-md-0">
+          <div class="col-12 col-md-4">
+            <div class="cs-card d-flex justify-content-center">
+              <img src="assets/main/imgs/Course Website Landing Page Thumbnail 1.svg" alt="Course web-site"
+                style="width: 83%; height: auto;">
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="cs-card">
+              <img src="assets/main/imgs/Group 33.svg" alt="Course web-site" style="width: 100%; height: auto;">
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="cs-card">
+              <img src="assets/main/imgs/phones 1.svg" alt="Course web-site" style="width: 103%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ################# Works Section End ################# -->
+
+  <!-- ################# Project Section Begin ################# -->
+  <div class="project py-5" id="contact">
+    <div class="container">
+      <div class="d-flex justify-content-center ms-5 mb-3">
+        <img src="assets/main/imgs/keyboard.png" alt="keyboard">
+      </div>
+      <div class="row row-gap-5">
+        <div class="col-12 col-lg-6">
+          <h1 class="d_header w_header">Got a project in <span class="b_header">mind?</span></h1>
+          <div class="d-flex">
+            <div class="mt-5">
+              <img src="assets/main/imgs/progect_vector.png" alt="vector">
+            </div>
+            <img src="assets/main/imgs/progress_illustrator.png" alt="Progress illustrator">
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 ">
+          <form>
+            <div class="row row-gap-4">
+              <div class="col-6">
+                <label for="name" class="form-label my-label">Your name</label>
+                <input type="text" name="name" id="name" placeholder="Name" class="form-control cs_form">
+              </div>
+              <div class="col-6">
+                <label for="email" class="form-label my-label">Your email</label>
+                <input type="email" name="email" id="email" placeholder="Email" class="form-control cs_form">
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label my-label">Your Message</label>
+                <textarea name="message" id="message" placeholder="Message" class="form-control cs_form" rows="10"></textarea>
+              </div>
+              <div>
+                <button type="submit" class="message_btn">Send Message<img src="assets/main/imgs/send.svg" alt="submit image" class="mt-1 ms-1"></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-end me-5">
+        <img src="assets/main/imgs/mail.png" alt="mail">
+      </div>
+    </div>
+  </div>
+  <!-- ################# Project Section End ################# -->
+
+  <!-- ################# Footer Section Begin ################# -->
+    <footer class="py-5">
+      <div class="container">
+        <div class="footer_nav d-flex justify-content-center gap-5">
+          <a href="#home" class="text-decoration-none"> <img src="assets/main/imgs/home.svg" class="mb-3" alt="home"><span class="footer_link ms-2">Home</span></a>
+          <a href="#about" class="text-decoration-none"> <img src="assets/main/imgs/user.svg" class="mb-3" alt="user"><span class="footer_link ms-2">About me</span></a>
+          <a href="#contact" class="text-decoration-none"> <img src="assets/main/imgs/phone.svg" class="mb-3" alt="phone"><span class="footer_link ms-2">Contact</span></a>
+        </div>
+        <div class="social_media d-flex justify-content-center gap-3 py-4">
+          <div class="social_item">
+            <img src="assets/main/imgs/facebook.svg" alt="facebook">
+          </div>
+          <div class="social_item">
+            <img src="assets/main/imgs/instagram.svg" alt="instagram">
+          </div>
+          <div class="social_item">
+            <img src="assets/main/imgs/twitter.svg" alt="twitter">
+          </div>
+          <div class="social_item">
+            <a href="https://www.youtube.com/@Football-and-cars" target="_blank"><img src="assets/main/imgs/youtube.svg" alt="youtube"></a>
+          </div>
+        </div>
+
+        <p class="terms text-end">Terms of Service - Privacy Policy</p>
+      </div>
+    </footer>
+  <!-- ################# Footer Section End ################# -->
+
 
   <script src="assets/vendor/js/bootstrap.bundle.js"></script>
 </body>
